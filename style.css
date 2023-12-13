@@ -45,7 +45,7 @@ nav {
 }
 
 .cardPanier {
-  margin-top: 20px;
+  margin-top: 5px;
   background-color: white;
   margin-left: 25%;
   margin-right: 25%;
@@ -207,36 +207,14 @@ footer {
   bottom: 0;
   width: 100%;
 }
-
-.footer-content {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-}
-
-.logo img {
-  max-width: 50%;
-}
-
-nav ul {
+footer .footer-content ul {
   list-style: none;
-  padding: 0;
-  margin: 0;
+  width: 30%;
   display: flex;
+  justify-content: space-around;
+  margin: 0 auto;
+  padding: 10px;
 }
-
-nav a {
-  text-decoration: none;
-  color: #fff;
-  margin: 0 15px;
-}
-
-nav a:hover {
-  text-decoration: underline;
-}
-
-.social-icons {
-  display: flex;
-  flex-direction: row-reverse;
-  margin-left: 10px;
+footer .social-icons i {
+  padding: 20px;
 }/*# sourceMappingURL=style.css.map */
