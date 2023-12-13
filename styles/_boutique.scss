@@ -1,4 +1,67 @@
-.vinContainer{
+@use "./settings" as var;
+
+.vinContainer {
+  position: relative;
+  height: 300px;
+  margin: 50px;
+  border: var.$border;
+  background: url(../Image/raisins-Matthias-Böckel-from-Pixabay-e1570475878397.jpg)
+    center/cover;
+  .vin {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    left: 50%;
+    top: 100%;
+    position: absolute;
+    text-align: center;
+    width: 40%;
+    height: 200px;
+    background: white;
+    transform: translate(-50%, -50%);
+    border: var.$border;
+    .rondBlanc {
+      border: var.$border;
+      width: 50px;
+      height: 50px;
+      border-radius: 100px;
+      background: var.$rondBlanc;
+    }
+    border: var.$border;
+    .rondRouge {
+      border: var.$border;
+      width: 50px;
+      height: 50px;
+      border-radius: 100px;
+
+      background: var.$rondRouge;
+    }
+    border: var.$border;
+    .rondRose {
+      border: var.$border;
+      width: 50px;
+      height: 50px;
+      border-radius: 100px;
+      background: var.$rondRose;
+    }
+  }
+}
+.pinardContainer {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  padding-top: 50px;
+  width: 60%;
+  max-width: 900px;
+  margin: 0 auto;
+
+  .cartePinard1 {
+    margin: 20px;
+    width: 200px;
     height: 300px;
-    border: 1px solid black;
+    border: var.$border;
+    img{
+        width: 50%;
+    }
+  }
 }
