@@ -24,26 +24,25 @@ body {
 
 header {
   background: rgb(114, 0, 4);
-  height: 200px;
+  height: 250px;
   display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-evenly;
+  font-size: 1.5rem;
 }
 
 nav {
-  position: relative;
   margin: 0 auto;
-  width: 400px;
+  width: 500px;
   display: grid;
   grid-template-columns: repeat(4, 1fr);
   grid-template-rows: 1fr;
-  margin-top: auto;
-  margin-bottom: 0;
+  text-align: center;
 }
 
 #logoheader {
-  position: absolute;
-  transform: translate(-50%, -50%);
-  left: 49%;
-  top: 8%;
+  width: 150px;
 }
 
 .TitrePanier {
