@@ -1,7 +1,56 @@
+* {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+  box-sizing: border-box;
+}
+
 body {
   background: rgb(240, 232, 221);
 }
 
 nav {
   background: rgb(114, 0, 4);
+}
+
+.TitrePanier {
+  background-color: rgb(171, 169, 169);
+  text-align: center;
+  justify-content: center;
+  margin-left: 25%;
+  margin-right: 25%;
+  margin-top: 20px;
+}
+
+.hdeux {
+  text-align: center;
+}
+
+.cardPanier {
+  background-color: white;
+  margin-left: 25%;
+  margin-right: 25%;
+}
+
+.cart-item {
+  display: flex;
+  margin-bottom: 20px;
+}
+
+.item-details {
+  flex-grow: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.panier {
+  display: flex;
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+  box-sizing: border-box;
 }/*# sourceMappingURL=style.css.map */
