@@ -89,6 +89,14 @@ nav {
   width: 200px;
   height: 300px;
   border: 2px solid rgb(51, 51, 51);
+  padding: 10px;
+}
+.pinardContainer .cartePinard1 .pannier {
+  align-items: flex-end;
+  display: flex;
+}
+.pinardContainer .cartePinard1 h2 {
+  padding-top: 10px;
 }
 .pinardContainer .cartePinard1 img {
   width: 40%;
