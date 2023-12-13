@@ -10,14 +10,6 @@ a {
   color: white;
 }
 
-footer {
-  background: rgb(114, 0, 4);
-  padding: 10px;
-  position: fixed;
-  bottom: 0;
-  width: 100%;
-}
-
 body {
   background: rgb(240, 232, 221);
 }
@@ -80,14 +72,6 @@ nav {
   display: flex;
 }
 
-footer {
-  background: rgb(114, 0, 4);
-  padding: 10px;
-  position: fixed;
-  bottom: 0;
-  width: 100%;
-}
-
 .logofooter {
   display: flex;
   padding-right: 20px;
@@ -105,14 +89,6 @@ a {
   color: white;
 }
 
-footer {
-  background: rgb(114, 0, 4);
-  padding: 10px;
-  position: fixed;
-  bottom: 0;
-  width: 100%;
-}
-
 * {
   padding: 0;
   margin: 0;
@@ -123,14 +99,6 @@ footer {
 a {
   text-decoration: none;
   color: white;
-}
-
-footer {
-  background: rgb(114, 0, 4);
-  padding: 10px;
-  position: fixed;
-  bottom: 0;
-  width: 100%;
 }
 
 .vinContainer {
@@ -198,4 +166,59 @@ footer {
 }
 .pinardContainer .cartePinard1 img {
   width: 40%;
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+  box-sizing: border-box;
+}
+
+a {
+  text-decoration: none;
+  color: white;
+}
+
+footer {
+  background: rgb(114, 0, 4);
+  color: #fff;
+  text-align: center;
+  padding: 10px;
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+}
+
+.footer-content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logo img {
+  max-width: 50%;
+}
+
+nav ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+}
+
+nav a {
+  text-decoration: none;
+  color: #fff;
+  margin: 0 15px;
+}
+
+nav a:hover {
+  text-decoration: underline;
+}
+
+.social-icons {
+  display: flex;
+  flex-direction: row-reverse;
+  margin-left: 10px;
 }/*# sourceMappingURL=style.css.map */
