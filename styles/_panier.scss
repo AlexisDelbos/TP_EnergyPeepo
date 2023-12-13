@@ -1,7 +1,12 @@
 @use "./settings" as var;
 
+<<<<<<< HEAD
 body {
   background: rgb(240, 232, 221);
+=======
+body{
+    background: var.$colorBeige;   
+>>>>>>> 61c7442d534e1ae9c2f8b2fd072e9ea9f75dea2c
 }
 
 nav {
