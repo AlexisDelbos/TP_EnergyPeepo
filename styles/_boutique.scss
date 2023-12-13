@@ -52,7 +52,7 @@
   display: flex;
   justify-content: space-around;
   flex-wrap: wrap;
-  padding-top: 50px;
+  padding-top: 80px;
   width: 60%;
   max-width: 900px;
   margin: 0 auto;
@@ -66,6 +66,16 @@
     .pannier {
         align-items: flex-end;
         display: flex;
+        font-size: 2rem;
+        margin-left: 10px;
+    }
+    .pinard-bot{
+        display: flex;
+        justify-content: space-around;
+        i{
+            color: var.$colorBordeaux;
+            font-size: 2rem;
+        }
     }
     h2 {
       padding-top: 10px;

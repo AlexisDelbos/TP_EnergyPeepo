@@ -30,6 +30,7 @@ header {
   align-items: center;
   justify-content: space-evenly;
   font-size: 1.5rem;
+  border-bottom: 2px solid rgb(51, 51, 51);
 }
 
 nav {
@@ -184,7 +185,7 @@ footer {
   display: flex;
   justify-content: space-around;
   flex-wrap: wrap;
-  padding-top: 50px;
+  padding-top: 80px;
   width: 60%;
   max-width: 900px;
   margin: 0 auto;
@@ -199,6 +200,16 @@ footer {
 .pinardContainer .cartePinard1 .pannier {
   align-items: flex-end;
   display: flex;
+  font-size: 2rem;
+  margin-left: 10px;
+}
+.pinardContainer .cartePinard1 .pinard-bot {
+  display: flex;
+  justify-content: space-around;
+}
+.pinardContainer .cartePinard1 .pinard-bot i {
+  color: rgb(114, 0, 4);
+  font-size: 2rem;
 }
 .pinardContainer .cartePinard1 h2 {
   padding-top: 10px;
