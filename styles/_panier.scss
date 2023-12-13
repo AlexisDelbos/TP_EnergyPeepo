@@ -28,7 +28,6 @@ nav {
 }
 
 .TitrePanier {
-  background-color: rgb(171, 169, 169);
   text-align: center;
   justify-content: center;
 }
@@ -39,7 +38,7 @@ nav {
   margin-left: 25%;
   margin-right: 25%;
   border: var.$border;
-  padding: 20px;
+  padding: 20px 0;
   h2 {
     text-align: center;
     margin: 10px;
@@ -48,18 +47,44 @@ nav {
     justify-content: space-around;
     display: flex;
     .livraison-1 {
-        width: 50%;
+      width: 50%;
       .cucu {
         display: grid;
         grid-template-columns: 30% 70%;
+        align-items: center;
+        input {
+          padding: 10px;
+        }
       }
     }
   }
 }
-
+.acheter{
+  display: flex;
+  width: 100%;
+  padding-bottom: 50px;
+  height: 100%;
+  justify-content: center;
+  text-align: center;
+  .acheter-centrer{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: var.$border;
+    background: rgb(95, 180, 95);
+    width: 100px;
+    height: 50px;
+    :hover{
+      background: rgb(255, 255, 255);
+    }
+  }
+}
 .cart-item {
   display: flex;
   margin-bottom: 20px;
+  img{
+    border-right: 1px solid rgb(168, 168, 168);
+  }
 }
 
 .cucu {
@@ -70,7 +95,11 @@ nav {
   flex-grow: 1;
   display: flex;
   align-items: center;
-  justify-content: center;
+  justify-content: space-between;
+    flex-direction: column;
+  strong{
+    margin: 50px;
+  }
 }
 
 .panier {
