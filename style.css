@@ -5,12 +5,92 @@
   box-sizing: border-box;
 }
 
+a {
+  text-decoration: none;
+  color: white;
+}
+
+footer {
+  background: rgb(114, 0, 4);
+  padding: 10px;
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+}
+
 body {
   background: rgb(240, 232, 221);
 }
 
-nav {
+header {
   background: rgb(114, 0, 4);
+  height: 200px;
+  display: flex;
+}
+
+nav {
+  position: relative;
+  margin: 0 auto;
+  width: 400px;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: 1fr;
+  margin-top: auto;
+  margin-bottom: 0;
+}
+
+#logoheader {
+  position: absolute;
+  transform: translate(-50%, -50%);
+  left: 49%;
+  top: 8%;
+}
+
+.TitrePanier {
+  background-color: rgb(171, 169, 169);
+  text-align: center;
+  justify-content: center;
+}
+
+.cardPanier {
+  margin-top: 20px;
+  background-color: white;
+  margin-left: 25%;
+  margin-right: 25%;
+  border: 2px solid rgb(51, 51, 51);
+}
+
+.cart-item {
+  display: flex;
+  margin-bottom: 20px;
+}
+
+.cucu {
+  padding: 5px;
+}
+
+.item-details {
+  flex-grow: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.panier {
+  display: flex;
+}
+
+footer {
+  background: rgb(114, 0, 4);
+  padding: 10px;
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+}
+
+.logofooter {
+  display: flex;
+  padding-right: 20px;
 }
 
 * {
@@ -20,11 +100,37 @@ nav {
   box-sizing: border-box;
 }
 
+a {
+  text-decoration: none;
+  color: white;
+}
+
+footer {
+  background: rgb(114, 0, 4);
+  padding: 10px;
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+}
+
 * {
   padding: 0;
   margin: 0;
   list-style: none;
   box-sizing: border-box;
+}
+
+a {
+  text-decoration: none;
+  color: white;
+}
+
+footer {
+  background: rgb(114, 0, 4);
+  padding: 10px;
+  position: fixed;
+  bottom: 0;
+  width: 100%;
 }
 
 .vinContainer {

@@ -7,23 +7,60 @@
     <link rel="stylesheet" href="style.css" />
   </head>
   <body>
+    <header>
+    <img src="Image/Logo.png" id="logoheader">
     <nav>
+
       <a href="index.html"> Accueil</a>
       <a href="boutique.html"> Boutique</a>
       <a href="contact.html"> Contact</a>
       <a href="panier.html"> Panier </a>
     </nav>
+  </header>
+    
 
-    <h1>Mes informations</h1>
+    
+   <section class="cardPanier"> 
+    <h1 class="TitrePanier"> Mon Panier </h1>
+        <div class="cart-item">
+        <img src="Image/bouteilles_pinard/vin_rouge_1.png" alt="Produit 1">
+            <div class="item-details">
+                <p> Bouteille de Vin Rouge - Sans-Mêlé : <strong> Prix </strong> 25€ <button>Supprimer</button></p>                
+            </div>
+        </div>
+    </section>
+   
 
-    <div>
-      <h2>Adresse de livraison</h2>
-      <label>
-        Numero <input type="number" name="Num" minlength="2" maxlength="8" />
-      </label>
-      <label> Adresse <input type="text" name="Adresse" /> </label>
-      <label> Code Postal <input type="number" name="CP" /> </label>
-      <label> Ville <input type="text" name="Ville" /> </label>
-    </div>
-  </body>
+
+    <section class="cardPanier">
+            <h2 class="hdeux"> Adresse de livraison</h2>
+
+            <div class="cucu"> Nom : <input type="text" name="nom" placeholder="Ex: Dupont" maxlength="20" minlength="2" id="nom"> </div>            
+            <div class="cucu"> Prénom : <input type="text" name="nom" placeholder="Ex: Jacques" max="20" id="prenom"> </div>                                   
+            <div class="cucu"> Numéro : <input type="number" name="numero" placeholder="Ex: 100" maxlength="15" minlength="2" id="numero"> </div>            
+            <div class="cucu"> Adresse : <input type="text" name="adresse" placeholder="Ex : rue albert" maxlength="70" id="adresse"> </div>            
+            <div class="cucu"> Ville : <input type="text" name="ville" placeholder="Ex : Paris" maxlength="30"> </div>
+            <div class="cucu"> Code Postal : <input type="number" name="codePostal" placeholder="Ex : 76000" maxlength="10"> </div>       
+            
+    </section>
+
+
+
+<footer> 
+  
+
+  <div class="cart-item">
+    <img src="Image/Logo.png" class="logofooter">
+    <nav>     
+      <a href="index.html"> Accueil</a> <br/>
+      <a href="boutique.html"> Notre catalogue </a><br/>
+      <a href="contact.html"> Nous contacter </a><br/>
+    </nav>
+  </div>
+</footer>
+
+
+
+
+</body>
 </html>
