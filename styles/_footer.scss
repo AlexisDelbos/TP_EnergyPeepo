@@ -1,7 +1,28 @@
 @use "./settings" as var;
 
-
 footer {
+<<<<<<< HEAD
+  transform: translate(0, -100);
+  background: var.$colorBordeaux;
+  color: #fff;
+  text-align: center;
+  padding: 10px;
+  width: 100%;
+
+  .footer-content ul {
+    list-style: none;
+    width: 30%;
+    display: flex;
+    justify-content: space-around;
+    margin: 0 auto;
+    padding: 10px;
+  }
+
+  .social-icons i {
+    padding: 20px;
+  }
+}
+=======
     background: rgb(114, 0, 4);
     color: #fff;
     text-align: center;
@@ -42,3 +63,4 @@ footer {
   
 
 
+>>>>>>> ddcd0f6f6c8a1d9260dd05ad082c601521faf22a

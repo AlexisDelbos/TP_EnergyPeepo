@@ -33,6 +33,7 @@ nav {
   grid-template-rows: 1fr;
   text-align: center;
 }
+
 #logoheader {
   width: 150px;
 }
@@ -44,11 +45,27 @@ nav {
 }
 
 .cardPanier {
-  margin-top: 5px;
+  margin: 50px;
   background-color: white;
   margin-left: 25%;
   margin-right: 25%;
   border: 2px solid rgb(51, 51, 51);
+  padding: 20px;
+}
+.cardPanier h2 {
+  text-align: center;
+  margin: 10px;
+}
+.cardPanier .cardPanier2 {
+  justify-content: space-around;
+  display: flex;
+}
+.cardPanier .cardPanier2 .livraison-1 {
+  width: 50%;
+}
+.cardPanier .cardPanier2 .livraison-1 .cucu {
+  display: grid;
+  grid-template-columns: 30% 70%;
 }
 
 .cart-item {
@@ -203,12 +220,17 @@ a {
 }
 
 footer {
+  transform: translate(0, -100);
   background: rgb(114, 0, 4);
   color: #fff;
   text-align: center;
+<<<<<<< HEAD
+  padding: 10px;
+=======
   position: fixed;
   padding: 10px;
   bottom: 0;
+>>>>>>> ddcd0f6f6c8a1d9260dd05ad082c601521faf22a
   width: 100%;
 }
 footer .footer-content ul {
