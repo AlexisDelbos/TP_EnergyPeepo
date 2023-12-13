@@ -21,9 +21,6 @@ nav {
   grid-template-columns: repeat(4, 1fr);
   grid-template-rows: 1fr;
   text-align: center;
-  :hover{
-    
-  }
 }
 
 #logoheader {
@@ -37,11 +34,27 @@ nav {
 }
 
 .cardPanier {
-  margin-top: 5px;
+  margin: 50px;
   background-color: white;
   margin-left: 25%;
   margin-right: 25%;
   border: var.$border;
+  padding: 20px;
+  h2 {
+    text-align: center;
+    margin: 10px;
+  }
+  .cardPanier2 {
+    justify-content: space-around;
+    display: flex;
+    .livraison-1 {
+        width: 50%;
+      .cucu {
+        display: grid;
+        grid-template-columns: 30% 70%;
+      }
+    }
+  }
 }
 
 .cart-item {
@@ -63,9 +76,6 @@ nav {
 .panier {
   display: flex;
 }
-
-
-
 
 .logofooter {
   display: flex;
