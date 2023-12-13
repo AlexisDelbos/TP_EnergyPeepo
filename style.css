@@ -1,2 +1,7 @@
-@import url(./styles/_panier.scss);
-@import url(./styles/_settings.scss);/*# sourceMappingURL=style.css.map */
+body {
+  background: rgb(240, 232, 221);
+}
+
+nav {
+  background: rgb(114, 0, 4);
+}/*# sourceMappingURL=style.css.map */

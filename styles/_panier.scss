@@ -1,6 +1,10 @@
 @use "./settings" as var;
 
 body{
-    background: var.$colorBeige;
+    background: var.$colorBeige;   
     
+}
+
+nav{
+    background: var.$colorBordeaux
 }
