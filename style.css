@@ -122,7 +122,7 @@ a {
   height: 300px;
   margin: 50px;
   border: 2px solid rgb(51, 51, 51);
-  background: url(../Image/banniere.jpg) center/cover;
+  background: url(../Image/raisin.jpg) center/cover;
 }
 .vinContainer .vin {
   display: flex;
@@ -224,12 +224,18 @@ footer {
   background: rgb(114, 0, 4);
   color: #fff;
   text-align: center;
+<<<<<<< HEAD
   padding: 10px;
+=======
+  position: fixed;
+  padding: 10px;
+  bottom: 0;
+>>>>>>> ddcd0f6f6c8a1d9260dd05ad082c601521faf22a
   width: 100%;
 }
 footer .footer-content ul {
   list-style: none;
-  width: 30%;
+  width: 40%;
   display: flex;
   justify-content: space-around;
   margin: 0 auto;
