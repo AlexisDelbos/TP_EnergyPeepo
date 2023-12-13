@@ -61,21 +61,26 @@
     margin: 20px;
     width: 200px;
     height: 300px;
-    border: var.$border;
     padding: 10px;
+    border: 1px solid rgb(82, 82, 82);
+    box-shadow: 1px 1px 8px 1px rgb(82, 82, 82);
     .pannier {
-        align-items: flex-end;
-        display: flex;
-        font-size: 2rem;
-        margin-left: 10px;
+      align-items: flex-end;
+      display: flex;
+      font-size: 2rem;
+      margin-left: 10px;
     }
-    .pinard-bot{
-        display: flex;
-        justify-content: space-around;
-        i{
-            color: var.$colorBordeaux;
-            font-size: 2rem;
-        }
+    .pinard-bot {
+      display: flex;
+      justify-content: space-around;
+      align-items: center;
+      span{
+        font-size: 1.5rem;
+      }
+      i {
+        color: var.$colorBordeaux;
+        font-size: 2rem;
+      }
     }
     h2 {
       padding-top: 10px;
