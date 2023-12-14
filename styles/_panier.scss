@@ -59,14 +59,14 @@ nav {
     }
   }
 }
-.acheter{
+.acheter {
   display: flex;
   width: 100%;
   padding-bottom: 50px;
   height: 100%;
   justify-content: center;
   text-align: center;
-  .acheter-centrer{
+  .acheter-centrer {
     display: flex;
     align-items: center;
     justify-content: center;
@@ -74,7 +74,7 @@ nav {
     background: rgb(95, 180, 95);
     width: 100px;
     height: 50px;
-    :hover{
+    :hover {
       background: rgb(255, 255, 255);
     }
   }
@@ -82,7 +82,7 @@ nav {
 .cart-item {
   display: flex;
   margin-bottom: 20px;
-  img{
+  img {
     border-right: 1px solid rgb(168, 168, 168);
   }
 }
@@ -96,8 +96,11 @@ nav {
   display: flex;
   align-items: center;
   justify-content: space-between;
-    flex-direction: column;
-  strong{
+  flex-direction: column;
+  button{
+    margin: 0;
+  }
+  strong {
     margin: 50px;
   }
 }
