@@ -5,7 +5,7 @@
   height: 300px;
   margin: 50px;
   border: var.$border;
-  background: url(../Image/raisin.jpg) center/cover;
+  background: url(./Image/raisin.jpg) center/cover;
   .vin {
     display: flex;
     align-items: center;
@@ -19,6 +19,10 @@
     background: white;
     transform: translate(-50%, -50%);
     border: var.$border;
+    @media (width < 600px) {
+      flex-direction: column;
+      height: 250px;
+        }
 
     .rondBlanc {
       border: var.$border;
@@ -62,8 +66,11 @@
     width: 200px;
     height: 300px;
     padding: 10px;
-    border: 1px solid rgb(82, 82, 82);
-    box-shadow: 1px 1px 8px 1px rgb(82, 82, 82);
+    // border: 1px solid rgb(114, 0, 4, 0.5);
+    // box-shadow: 2px 2px 10px rgb(114, 0, 4, 0.8);
+    // border-radius: 10px;
+    // background-color: whitesmoke;
+
     .pannier {
       align-items: flex-end;
       display: flex;
@@ -90,4 +97,23 @@
       width: 40%;
     }
   }
+}
+.cartePinardBlanc{
+  border: 1px solid var.$rondBlanc;
+  box-shadow: 2px 2px 10px var.$rondBlanc;
+  border-radius: 10px;
+  background-color: whitesmoke;
+}
+.cartePinardRose{
+  border: 1px solid var.$rondRose;
+  box-shadow: 2px 2px 10px var.$rondRose;
+  border-radius: 10px;
+  background-color: whitesmoke;
+}
+
+.cartePinardRouge{
+  border: 1px solid var.$rondRouge;
+  box-shadow: 2px 2px 10px var.$rondRouge;
+  border-radius: 10px;
+  background-color: whitesmoke;
 }

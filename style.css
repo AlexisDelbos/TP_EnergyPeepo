@@ -10,6 +10,14 @@ a {
   color: white;
 }
 
+input :focus::-moz-placeholder {
+  color: transparent;
+}
+
+input :focus::placeholder {
+  color: transparent;
+}
+
 body {
   background: rgb(240, 232, 221);
 }
@@ -28,10 +36,14 @@ header {
 nav {
   margin: 0 auto;
   width: 500px;
-  display: grid;
-  grid-template-columns: repeat(4, 1fr);
-  grid-template-rows: 1fr;
-  text-align: center;
+  display: flex;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+}
+@media (width < 760px) {
+  nav {
+    width: 100%;
+  }
 }
 
 #logoheader {
@@ -59,10 +71,25 @@ nav {
 .cardPanier .cardPanier2 {
   justify-content: space-around;
   display: flex;
+  width: 100%;
+}
+@media (width < 960px) {
+  .cardPanier .cardPanier2 {
+    flex-direction: column;
+  }
+}
+.cardPanier .cardPanier2 input {
+  margin: 0;
 }
 .cardPanier .cardPanier2 .livraison-1 {
   width: 50%;
   margin: 20px;
+}
+@media (width < 1160px) {
+  .cardPanier .cardPanier2 .livraison-1 {
+    margin: 0;
+    width: 100%;
+  }
 }
 .cardPanier .cardPanier2 .livraison-1 .cucu {
   display: grid;
@@ -101,6 +128,11 @@ nav {
 }
 .cart-item img {
   border-right: 1px solid rgb(168, 168, 168);
+}
+@media (width < 750px) {
+  .cart-item img {
+    display: none;
+  }
 }
 
 .cucu {
@@ -143,6 +175,14 @@ a {
   color: white;
 }
 
+input :focus::-moz-placeholder {
+  color: transparent;
+}
+
+input :focus::placeholder {
+  color: transparent;
+}
+
 * {
   padding: 0;
   margin: 0;
@@ -155,12 +195,20 @@ a {
   color: white;
 }
 
+input :focus::-moz-placeholder {
+  color: transparent;
+}
+
+input :focus::placeholder {
+  color: transparent;
+}
+
 .vinContainer {
   position: relative;
   height: 300px;
   margin: 50px;
   border: 2px solid rgb(51, 51, 51);
-  background: url(../Image/raisin.jpg) center/cover;
+  background: url(./Image/raisin.jpg) center/cover;
 }
 .vinContainer .vin {
   display: flex;
@@ -178,12 +226,18 @@ a {
   border: 2px solid rgb(51, 51, 51);
   border: 2px solid rgb(51, 51, 51);
 }
+@media (width < 600px) {
+  .vinContainer .vin {
+    flex-direction: column;
+    height: 250px;
+  }
+}
 .vinContainer .vin .rondBlanc {
   border: 2px solid rgb(51, 51, 51);
   width: 50px;
   height: 50px;
   border-radius: 100px;
-  background: rgb(204, 188, 44);
+  background: rgb(236, 227, 138);
 }
 .vinContainer .vin .rondBlanc i {
   font-size: 2rem;
@@ -217,8 +271,6 @@ a {
   width: 200px;
   height: 300px;
   padding: 10px;
-  border: 1px solid rgb(82, 82, 82);
-  box-shadow: 1px 1px 8px 1px rgb(82, 82, 82);
 }
 .pinardContainer .cartePinard1 .pannier {
   align-items: flex-end;
@@ -246,6 +298,27 @@ a {
   width: 40%;
 }
 
+.cartePinardBlanc {
+  border: 1px solid rgb(236, 227, 138);
+  box-shadow: 2px 2px 10px rgb(236, 227, 138);
+  border-radius: 10px;
+  background-color: whitesmoke;
+}
+
+.cartePinardRose {
+  border: 1px solid rgb(253, 199, 163);
+  box-shadow: 2px 2px 10px rgb(253, 199, 163);
+  border-radius: 10px;
+  background-color: whitesmoke;
+}
+
+.cartePinardRouge {
+  border: 1px solid rgb(157, 0, 57);
+  box-shadow: 2px 2px 10px rgb(157, 0, 57);
+  border-radius: 10px;
+  background-color: whitesmoke;
+}
+
 * {
   padding: 0;
   margin: 0;
@@ -256,6 +329,14 @@ a {
 a {
   text-decoration: none;
   color: white;
+}
+
+input :focus::-moz-placeholder {
+  color: transparent;
+}
+
+input :focus::placeholder {
+  color: transparent;
 }
 
 footer {
@@ -303,6 +384,14 @@ a {
   color: white;
 }
 
+input :focus::-moz-placeholder {
+  color: transparent;
+}
+
+input :focus::placeholder {
+  color: transparent;
+}
+
 main {
   width: 100%;
   height: 90%;
@@ -322,18 +411,32 @@ main {
 #idk {
   display: grid;
   grid-template-columns: 30% 70%;
+  align-items: center;
 }
 
-.formulaire {
+.form-container {
+  display: flex;
+  justify-content: center;
+  margin: 100px 0;
+  width: 100%;
+}
+.form-container .formulaire {
   width: 700px;
   height: 580px;
   border: 1px solid rgba(114, 0, 4, 0.5);
-  background-color: whitesmoke;
-  border-radius: 10px;
-  text-align: left;
-  grid-column: 2;
-  grid-row: 2;
   box-shadow: 2px 2px 10px rgba(114, 0, 4, 0.8);
+  border-radius: 10px;
+  background-color: whitesmoke;
+  text-align: left;
+}
+@media (width < 760px) {
+  .form-container .formulaire {
+    width: 100%;
+  }
+}
+.form-container .formulaire textarea {
+  max-width: 600px;
+  resize: vertical;
 }
 
 h3 {
@@ -346,10 +449,17 @@ h3 {
   padding: 10px;
   width: 100%;
   border-radius: 10px;
+  display: flex;
+  justify-content: center;
 }
 
 label {
   padding-left: 50px;
+}
+@media (width < 760px) {
+  label {
+    padding: 0;
+  }
 }
 
 input {
@@ -381,8 +491,7 @@ textarea {
 }
 
 button {
-
-  
+  margin-top: 50px;
   border-radius: 5px;
   padding: 9px;
   width: 10em;

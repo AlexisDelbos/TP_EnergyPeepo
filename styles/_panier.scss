@@ -17,10 +17,12 @@ header {
 nav {
   margin: 0 auto;
   width: 500px;
-  display: grid;
-  grid-template-columns: repeat(4, 1fr);
-  grid-template-rows: 1fr;
-  text-align: center;
+  display: flex;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+  @media (width < 760px) {
+    width: 100%;
+  }
 }
 
 #logoheader {
@@ -47,14 +49,25 @@ nav {
   .cardPanier2 {
     justify-content: space-around;
     display: flex;
+    width: 100%;
+    @media (width < 960px) {
+    flex-direction: column;
+    }
+    input{
+      margin: 0;
+    }
     .livraison-1 {
       width: 50%;
       margin: 20px;
+      @media (width < 1160px) {
+        margin: 0;
+        width: 100%;
+      }
       .cucu {
         display: grid;
         grid-template-columns: 30% 70%;
         align-items: center;
-        label{
+        label {
           padding: 0;
         }
         input {
@@ -88,6 +101,9 @@ nav {
   margin-bottom: 20px;
   img {
     border-right: 1px solid rgb(168, 168, 168);
+    @media (width < 750px) {
+      display: none;
+    }
   }
 }
 
@@ -101,7 +117,7 @@ nav {
   align-items: center;
   justify-content: space-between;
   flex-direction: column;
-  button{
+  button {
     margin: 0;
     color: white;
   }
