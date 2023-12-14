@@ -1,11 +1,13 @@
 @use "./settings" as var;
 
 footer {
-  transform: translate(0, -100);
+  
   background: var.$colorBordeaux;
   color: #fff;
+  
+  bottom: 0;
   text-align: center;
-  padding: 10px;
+  padding: 5px;
   width: 100%;
 
   .footer-content ul {
@@ -24,13 +26,13 @@ footer {
 
 .footer-content ul {
   list-style: none;
-  width: 40%;
+  width: 30%;
   display: flex;
   justify-content: space-around;
   margin: 0 auto;
-  padding: 10px;
+  padding: 5px;
 }
 
 .social-icons i {
-  padding: 20px;
+  padding: 10px;
 }

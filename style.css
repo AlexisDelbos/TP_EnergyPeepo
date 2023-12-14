@@ -259,11 +259,11 @@ a {
 }
 
 footer {
-  transform: translate(0, -100);
   background: rgb(114, 0, 4);
   color: #fff;
+  bottom: 0;
   text-align: center;
-  padding: 10px;
+  padding: 5px;
   width: 100%;
 }
 footer .footer-content ul {
@@ -280,15 +280,15 @@ footer .social-icons i {
 
 .footer-content ul {
   list-style: none;
-  width: 40%;
+  width: 30%;
   display: flex;
   justify-content: space-around;
   margin: 0 auto;
-  padding: 10px;
+  padding: 5px;
 }
 
 .social-icons i {
-  padding: 20px;
+  padding: 10px;
 }
 
 * {
@@ -381,8 +381,8 @@ textarea {
 }
 
 button {
-  margin-top: 50px;
-  margin-left: 40em;
+
+  
   border-radius: 5px;
   padding: 9px;
   width: 10em;

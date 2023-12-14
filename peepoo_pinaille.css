@@ -35,12 +35,10 @@ header {
 }
 
 .bouton {
-
-
     grid-column: 1fr;
     grid-row-start: 4;
     grid-row-end: 5;
-    margin-left: 100px;
+    margin-left: 80px;
 }
 
 
