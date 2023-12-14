@@ -50,10 +50,11 @@ nav {
   margin-right: 25%;
   border: 2px solid rgb(51, 51, 51);
   padding: 20px 0;
+  align-items: center;
 }
 .cardPanier h2 {
   text-align: center;
-  margin: 10px;
+  margin: 20px 0 40px 0;
 }
 .cardPanier .cardPanier2 {
   justify-content: space-around;
@@ -61,17 +62,21 @@ nav {
 }
 .cardPanier .cardPanier2 .livraison-1 {
   width: 50%;
+  margin: 20px;
 }
 .cardPanier .cardPanier2 .livraison-1 .cucu {
   display: grid;
   grid-template-columns: 30% 70%;
   align-items: center;
 }
+.cardPanier .cardPanier2 .livraison-1 .cucu label {
+  padding: 0;
+}
 .cardPanier .cardPanier2 .livraison-1 .cucu input {
   padding: 10px;
 }
 
-.acheter {
+#acheter {
   display: flex;
   width: 100%;
   padding-bottom: 50px;
@@ -79,16 +84,14 @@ nav {
   justify-content: center;
   text-align: center;
 }
-.acheter .acheter-centrer {
-  display: flex;
-  align-items: center;
-  justify-content: center;
+#acheter #acheter-centrer {
   border: 2px solid rgb(51, 51, 51);
   background: rgb(95, 180, 95);
   width: 100px;
   height: 50px;
+  margin: 0;
 }
-.acheter .acheter-centrer :hover {
+#acheter #acheter-centrer :hover {
   background: rgb(255, 255, 255);
 }
 
@@ -113,6 +116,7 @@ nav {
 }
 .item-details button {
   margin: 0;
+  color: white;
 }
 .item-details strong {
   margin: 50px;
@@ -236,6 +240,7 @@ a {
 }
 .pinardContainer .cartePinard1 h2 {
   padding-top: 10px;
+  text-align: center;
 }
 .pinardContainer .cartePinard1 img {
   width: 40%;

@@ -39,19 +39,24 @@ nav {
   margin-right: 25%;
   border: var.$border;
   padding: 20px 0;
+  align-items: center;
   h2 {
     text-align: center;
-    margin: 10px;
+    margin: 20px 0 40px 0;
   }
   .cardPanier2 {
     justify-content: space-around;
     display: flex;
     .livraison-1 {
       width: 50%;
+      margin: 20px;
       .cucu {
         display: grid;
         grid-template-columns: 30% 70%;
         align-items: center;
+        label{
+          padding: 0;
+        }
         input {
           padding: 10px;
         }
@@ -59,21 +64,20 @@ nav {
     }
   }
 }
-.acheter {
+#acheter {
   display: flex;
   width: 100%;
   padding-bottom: 50px;
   height: 100%;
   justify-content: center;
   text-align: center;
-  .acheter-centrer {
-    display: flex;
-    align-items: center;
-    justify-content: center;
+  #acheter-centrer {
     border: var.$border;
     background: rgb(95, 180, 95);
     width: 100px;
     height: 50px;
+    margin: 0;
+
     :hover {
       background: rgb(255, 255, 255);
     }
@@ -99,6 +103,7 @@ nav {
   flex-direction: column;
   button{
     margin: 0;
+    color: white;
   }
   strong {
     margin: 50px;
